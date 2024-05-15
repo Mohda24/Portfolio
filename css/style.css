@@ -594,6 +594,10 @@ html {
   }
 }
 
+*{
+  scroll-behavior: smooth;
+}
+
 .text-modi {
   -webkit-text-stroke: 1px black;
   -webkit-text-fill-color: transparent;
@@ -606,6 +610,39 @@ html {
 
 .box{
   box-shadow: 0px 6px 8px -6px rgba(24, 39, 75, 0.12), 0px 8px 16px -6px rgba(24, 39, 75, 0.08)
+}
+
+.toast{
+  position: absolute;
+  -webkit-backdrop-filter: blur(133px);
+          backdrop-filter: blur(133px);
+  background: #d4edda;
+  width: 400px;
+  z-index: 9999;
+  height: 80px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-weight: bold;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.error{
+  bottom: 10px;
+  right: 10px;
+  color: red;
+}
+
+.succes{
+  top: 10px;
+  right: 20px;
+  color: #3c764a;
 }
 
 .fixed {
@@ -803,6 +840,10 @@ html {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded {
@@ -1099,6 +1140,10 @@ html {
   transition-duration: 0.5s;
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 @media (min-width: 640px) {
   .sm\:hidden{
     display: hidden;
@@ -1240,6 +1285,14 @@ html {
 
 .hover\:opacity-80:hover {
   opacity: 0.8;
+}
+
+.hover\:opacity-70:hover {
+  opacity: 0.7;
+}
+
+.hover\:opacity-90:hover {
+  opacity: 0.9;
 }
 
 .hover\:grayscale-0:hover {

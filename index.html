@@ -13,8 +13,11 @@
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <!-- link css -->
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
 </head>
-<body>
+<body class="scroll-smooth">
     <!-- Header -->
     <div class="container px-[15px] sticky top-[-2px] bg-white sm:static sm:bg-none z-[222]">
         <header class="flex justify-between items-center py-4 sm:py-6">
@@ -24,10 +27,10 @@
             </div>
             <nav>
                 <ul class="hidden sm:flex  gap-[33px]">
-                    <li class="transition duration-[0.3s] ease" ><a class="text-xl font-semibold tracking-tight capitalize hover:opacity-80" href="">About me</a></li>
-                    <li class=" transition duration-[0.3s] ease"><a class="text-xl font-semibold tracking-tight capitalize hover:opacity-80" href="">Skills</a></li>
-                    <li class=" transition duration-[0.3s] ease"><a class="text-xl font-semibold tracking-tight capitalize hover:opacity-80 " href="">Project</a></li> 
-                    <li class=" transition duration-[0.3s] ease"><a class="text-xl font-semibold tracking-tight capitalize hover:opacity-80" href="">Contact Me</a></li>
+                    <li class="transition duration-[0.3s] ease" ><a class="text-xl font-semibold tracking-tight capitalize hover:opacity-80" href="#about">About me</a></li>
+                    <li class=" transition duration-[0.3s] ease"><a class="text-xl font-semibold tracking-tight capitalize hover:opacity-80" href="#skills">Skills</a></li>
+                    <li class=" transition duration-[0.3s] ease"><a class="text-xl font-semibold tracking-tight capitalize hover:opacity-80 " href="#projuct">Project</a></li> 
+                    <li class=" transition duration-[0.3s] ease"><a class="text-xl font-semibold tracking-tight capitalize hover:opacity-80" href="#contact">Contact Me</a></li>
                     
                 </ul>
             </nav>
@@ -41,10 +44,10 @@
             <nav class="mynav fixed top-0 right-0 w-[250px] h-[100vh] backdrop-blur-[120px] bg-[#ffffff40] rounded px-6 py-8 hidden">
                 <ul class="flex flex-col gap-[30px] ">
                     <li class="close w-fit me-auto cursor-pointer"><i class="fa-solid fa-xmark text-[25px]"></i></li>
-                    <li class="group w-fit hover:scale-110 me-auto text-[20px] font-medium transition duration-[0.3s]"><a href="" class=" group-hover:opacity-[0.3] ease transition duration-[0.5s] ">About Me</a></li>
-                    <li class="group w-fit me-auto hover:scale-110 text-[20px] font-medium transition duration-[0.3s]"><a href="" class=" group-hover:opacity-[0.3] ease transition duration-[0.5s] ">Skills</a></li>
-                    <li class="group w-fit hover:scale-110 me-auto text-[20px] font-medium transition duration-[0.3s]"><a href="" class=" group-hover:opacity-[0.3] ease transition duration-[0.5s] ">Project</a></li>
-                    <li class="group w-fit hover:scale-110 me-auto text-[20px] font-medium transition duration-[0.3s]"><a href="" class=" group-hover:opacity-[0.3] ease transition duration-[0.5s] ">Contact Me</a></li>
+                    <li class="group w-fit hover:scale-110 me-auto text-[20px] font-medium transition duration-[0.3s]"><a href="#about" class=" group-hover:opacity-[0.3] ease transition duration-[0.5s] ">About Me</a></li>
+                    <li class="group w-fit me-auto hover:scale-110 text-[20px] font-medium transition duration-[0.3s]"><a href="#skills" class=" group-hover:opacity-[0.3] ease transition duration-[0.5s] ">Skills</a></li>
+                    <li class="group w-fit hover:scale-110 me-auto text-[20px] font-medium transition duration-[0.3s]"><a href="#projuct" class=" group-hover:opacity-[0.3] ease transition duration-[0.5s] ">Project</a></li>
+                    <li class="group w-fit hover:scale-110 me-auto text-[20px] font-medium transition duration-[0.3s]"><a href="#contact" class=" group-hover:opacity-[0.3] ease transition duration-[0.5s] ">Contact Me</a></li>
                 </ul>
             </nav>
         </header>
@@ -72,7 +75,7 @@
         <!-- Main party -->
         <main>
             <!-- My skills -->
-            <div class="container px-[15px] py-[40px] sm:py-[60px]">
+            <div id="skills" class="container px-[15px] py-[40px] sm:py-[60px]">
                 <section class="skills flex flex-col gap-5">
                     <p class="py-5 w-full text-center capitalize text-[28px] sm:text-5xl font-normal tracking-[-0.56px] sm:tracking-[-0.96px] leading-8 sm:leading-[56px]">My <span class="font-extrabold">Skills</span></p>
                     <div class="cards flex md:justify-center  xl:justify-between  flex-wrap justify-between gap-[20px] sm:gap-5 py-5 ">
@@ -132,7 +135,7 @@
 
             </div>
             <!-- My Experience -->
-            <section class="experience bg-black">
+            <section id="experience" class="experience bg-black">
                 <div class="container px-[15px] py-[40px] sm:py-[60px] flex flex-col gap-5">
                         <p class="py-5 w-full text-white text-center capitalize text-[28px] sm:text-5xl font-normal tracking-[-0.56px] sm:tracking-[-0.96px] leading-8 sm:leading-[56px]">My <span class="font-extrabold">Experience</span></p>
                         <div class="experience-cards sm:px-[32px] flex flex-col gap-[28px] sm:gap-[32px]">
@@ -173,7 +176,7 @@
                 </div>
             </section>
             <!-- My About -->
-            <div class="container px-[15px] py-[40px] sm:py-[60px]">
+            <div id="about" class="container px-[15px] py-[40px] sm:py-[60px]">
                 <section class="About flex flex-col sm:flex-row md:flex-wrap md:items-center md:justify-center xl:justify-normal xl:flex-nowrap sm:px-[32px] sm:gap-[60px]">
                     <img src="img/About.png" alt="About">
                     <div class="about-content flex flex-col gap-[20px]">
@@ -187,7 +190,7 @@
             </div>
             <!-- My Projucts -->
             
-            <section class="Projects bg-black">
+            <section id="projuct" class="Projects bg-black">
                 <div class="container px-[15px] py-[40px] sm:py-[60px] flex gap-[20px] flex-col">
                     <p class="py-5 w-full text-center capitalize text-[28px] sm:text-5xl font-normal tracking-[-0.56px] sm:tracking-[-0.96px] leading-8 sm:leading-[56px] text-white">My <span class="font-extrabold">Projects</span></p>
 
@@ -260,14 +263,14 @@
 
             </section>
             <!-- Contact Form -->
-            <section class="container px-[15px] py-[40px] sm:py-[60px] flex sm:items-center flex-col xl:flex-row">
+            <section id="contact" class="container px-[15px] py-[40px] sm:py-[60px] flex sm:items-center flex-col xl:flex-row">
                 <div class="form flex flex-col gap-[20px] py-[20px] xl:me-[156px]">
-                    <input class="border-[1.4px] border-black rounded-[4px] px-[24px] py-[16px] sm:w-[500px]" type="text" placeholder="Your Name">
-                    <input class="border-[1.4px] border-black rounded-[4px] px-[24px] py-[16px] sm:w-[500px]" type="email" placeholder="Email">
-                    <input class="border-[1.4px] border-black rounded-[4px] px-[24px] py-[16px] sm:w-[500px]" type="text" placeholder="Your website (If exists)">
-                    <textarea class="border-[1.4px] border-black rounded-[4px] px-[24px] py-[16px] sm:w-[500px] h-[108px]" placeholder="How can I help?*"></textarea>
-                    <div class="btns flex flex-col sm:flex-row gap-[20px] sm:gap-[24px] items-center">
-                        <a href="" class="px-[20px] py-[12px] sm:py-[16px] text-[16px] sm:text-[20px] tracking-[0.4px] font-semibold bg-black text-white rounded-[4px]">Get In Touch</a>
+                    <input id="name" class="border-[1.4px] border-black rounded-[4px] px-[24px] py-[16px] sm:w-[500px]" type="text" placeholder="Your Name">
+                    <input id="email" class="border-[1.4px] border-black rounded-[4px] px-[24px] py-[16px] sm:w-[500px]" type="email" placeholder="Email">
+                    <input id="website" class="border-[1.4px] border-black rounded-[4px] px-[24px] py-[16px] sm:w-[500px]" type="text" placeholder="Your website (If exists)">
+                    <textarea id="message" class="border-[1.4px] border-black rounded-[4px] px-[24px] py-[16px] sm:w-[500px] h-[108px]" placeholder="How can I help?*"></textarea>
+                    <div class="btns flex flex-col sm:flex-row gap-[20px] sm:gap-[24px] items-center hover:opacity-90 transition-all duration-300">
+                        <a id="send" class="px-[20px] py-[12px] sm:py-[16px] text-[16px] sm:text-[20px] tracking-[0.4px] font-semibold bg-black text-white rounded-[4px] cursor-pointer">Get In Touch</a>
                         <div class="flex gap-[24px]">
                             <a class="group w-[48px] h-[48px] p-3 sm:p-4 sm:w-[56px] sm:h-[56px] border-2 border-black rounded-[4px] hover:bg-[#1e7cf2] transition duration-[0.5s]" href="https://web.facebook.com/?ref=homescreenpwa&_rdc=1&_rdr"><i class="fa-brands fa-facebook text-[24px] flex items-center content-center group-hover:text-white transition duration-[0.5s]"></i></a>
                             <a href="https://www.instagram.com/theouzedhero/" class="group w-[48px] h-[48px] p-3 sm:p-4 sm:w-[56px] sm:h-[56px] border-2 border-black rounded-[4px] hover:bg-[#d63384] transition duration-[0.5s]"><i class="fa-brands fa-instagram text-[24px] flex items-center content-center group-hover:text-white transition duration-[0.5s]"></i></a>
@@ -306,5 +309,12 @@
 
         </footer>
     <script src="script.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "uwNzgcr2RmRslwsYG",
+            });
+        })();
+    </script>
 </body>
 </html>
